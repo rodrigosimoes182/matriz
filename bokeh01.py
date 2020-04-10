@@ -1,5 +1,11 @@
 from bokeh.plotting import figure, output_file, show
 import numpy as np
+import urllib3
+
+#pegando dados do Bing
+http = urllib3.PoolManager()
+r = http.request('GET', 'https://www.bing.com/covid')
+data = r..data.decode('utf-8')
 
 #create a matriz
 a = np.arange(64).reshape(2,32)
