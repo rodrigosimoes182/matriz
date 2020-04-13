@@ -13,13 +13,15 @@ headers = {
     'x-rapidapi-host': "covid-193.p.rapidapi.com",
     'x-rapidapi-key': "ba4bc89c4fmsh0c24e8a4fe890c6p15c7e6jsn7d629a2821e1"
     }
-response = requests.request("GET", url, headers=headers, params=querystring)
-leitura = response.text.split('{')
-resposta = pd.DataFrame(response)
 #ETL with API data
+response = requests.request("GET", url, headers=headers, params=querystring)
+resp= response.text.replace('"',' ')
+resp.replace('}','')
+leitura = resp.split('{')
+resposta = pd.DataFrame(response)
 localjson='/Users/rodsim/Documents/matrizes/BasedeDados.json'
 resposta.to_json(localjson, orient='values')
-'''leitura = read_json(localjson)
+'''leitura = read_json(localjson)  trecho tirado do codigo, somente como referencia
 arrumajson = json_normalize(response)'''
 #Prit information to confirm if everything is fine
 dicionario = {}
