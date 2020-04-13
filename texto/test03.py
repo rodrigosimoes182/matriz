@@ -1,3 +1,11 @@
+### import libraries
+#from bs4 import BeautifulSoup
+#import urllib3
+#specify the url
+#http = urllib3.PoolManager()
+#r = http.request('GET', 'https://bing.com/covid/data/brazil')
+#print(r)
+
 import subprocess, string
 
 processo = subprocess.Popen("docker ps -a", shell=True, stdout=subprocess.PIPE)
