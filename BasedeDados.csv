@@ -1,4 +1,4 @@
 ,0
-0,"b'{""get"":""statistics"",""parameters"":{""country"":""Brazil""},""errors"":[],""results"":1,""response"":[{""country"":""Brazil"",""cases"":{""new"":""+3'"
-1,"b'1"",""active"":17046,""critical"":296,""recovered"":173,""total"":18176},""deaths"":{""new"":""+3"",""total"":957},""tests"":{""total"":62985},""day"":'"
-2,"b'""2020-04-10"",""time"":""2020-04-10T03:30:05+00:00""}]}'"
+0,"b'{""get"":""statistics"",""parameters"":{""country"":""Brazil""},""errors"":[],""results"":1,""response"":[{""country"":""Brazil"",""cases"":{""new"":""+1'"
+1,"b'03"",""active"":19748,""critical"":296,""recovered"":173,""total"":21065},""deaths"":{""new"":""+4"",""total"":1144},""tests"":{""total"":62985},""day'"
+2,"b'"":""2020-04-12"",""time"":""2020-04-12T19:30:05+00:00""}]}'"

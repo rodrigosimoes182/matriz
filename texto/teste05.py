@@ -5,7 +5,7 @@
 #http = urllib3.PoolManager()
 #r = http.request('GET', 'https://bing.com/covid/data/brazil')
 #print(r)
-import requests
+import requests, json
 import pandas as pd
 url = "https://covid-193.p.rapidapi.com/statistics"
 pais = input('insira o Pais que deseja consultar:')
@@ -17,7 +17,7 @@ headers = {
     }
 response = requests.request("GET", url, headers=headers, params=querystring)
 resposta = pd.DataFrame (response)
-resposta.to_csv((r'/Users/rodsim/Documents/matrizes/BasedeDados.csv'))
+resposta.to_json((r'/Users/rodsim/Documents/matrizes/BasedeDados.json'))
 print(response)
 print(resposta)
 #print(type(resposta))
